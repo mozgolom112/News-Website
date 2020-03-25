@@ -20,3 +20,7 @@ from app.models import news
 #пока просто создаем все модели. 
 #001 - сделать через миграцию https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/
 database.create_all()
+
+from app.api.news import get_top_news
+
+get_top_news()
